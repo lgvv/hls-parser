@@ -1,0 +1,25 @@
+[package]
+name = "hls-ffi"
+description = "UniFFI adapters for the HLS parser"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[lib]
+name = "hls_ffi"
+crate-type = ["lib", "staticlib", "cdylib"]
+
+[features]
+bindgen = ["uniffi/cli", "uniffi/cargo-metadata"]
+
+[dependencies]
+hls-core = { path = "../hls-core", version = "0.1.0" }
+thiserror.workspace = true
+uniffi.workspace = true
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "src/bin/uniffi-bindgen.rs"
+required-features = ["bindgen"]
+
+# UniFFI 생성 코드에는 unsafe 블록이 있음, 직접 작성한 core 코드는 unsafe 금지
