@@ -1,0 +1,7 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc 14b99647303e8deec8d237d99199a564ab56d239fb63f9178c2e8eb310473a24 # shrinks to spec = [(1000, false, false), (1000, false, true), (1000, false, false), (1000, false, false), (1000, false, false), (1000, false, false), (1000, false, false), (1000, false, false), (1000, false, false), (1000, false, false), (1000, false, false), (1000, false, false), (1000, false, false)], windows = [(1, 1)], queries = [0, 0, 0, 0, 116264, 210961101586, 182143551678, 149289583168, 85969987769, 142162797552, 267402394243, 163989961752, 128279926188, 311986599701, 177926866127, 166536379424, 100755562002, 254837621372, 34449945511, 60542986159, 316532538276, 108439319123, 321282988984, 385449023903, 115049143355, 209121333262, 179691345565, 135096146934, 314969614627, 333052440801, 48131502537, 75424525987]

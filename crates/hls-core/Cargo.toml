@@ -1,0 +1,17 @@
+[package]
+name = "hls-core"
+description = "Platform-independent HLS playlist parsing and immutable time indexes"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+chrono.workspace = true
+url.workspace = true
+
+[dev-dependencies]
+proptest = "1"
+
+[lints]
+workspace = true

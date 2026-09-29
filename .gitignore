@@ -1,0 +1,26 @@
+# Rust build output (including generated docs and flycheck logs)
+/target/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Temporary files and logs
+tmp/
+temp/
+.tmp/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.log
